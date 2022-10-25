@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-image: url(https://source.unsplash.com/random);
+            /* background-repeat: no-repeat; */
+            color: white;
+            font-size: 24px;
+            margin: 23px;
+            
+        }
+        fieldset{
+            width: 150px;
+            height: 850px;
+            /* align-items: center; */
+            /* float: left; */
+            margin: auto;
+            border: none;
+        }
+        h1,p{
+            text-align: center;
+        }
+        h1{
+            margin: 5px;
+        }
+        p{
+            font-style: italic;
+        }
+        div{
+            padding: 20px;
+            margin: auto;
+            /* float: left; */
+        }
+        form{
+            box-sizing: border-box;
+            background-color: rgb(91, 91, 115,50%);
+            color: rgb(245, 255, 250);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgb(119, 126, 207);
+            
+        }
+input,select{
+  font-size: 0.67em;
+  width: 800px;
+  border-radius: 5px;
+  background-color: rgb(161, 161, 211);
+  height: 35px;
+}
+textarea{
+    width: 800px;
+  border-radius: 5px;
+  background-color: rgb(161, 161, 211);
+  height: 135px;
+}
+/* #mysubmit{
+    background-color: rgb(75, 160, 75);
+    height: 50px;
+
+} */
+input[type="submit"] {
+  background-color: rgb(139, 0, 139);
+  border-color: rgb(255, 215, 0);
+  color: rgb(245, 255, 250);
+  font-size: 1.33rem;
+  min-height: 2.5em;
+}
+input[type="submit"]:hover {
+  outline: none !important;
+  border: 2px solid rgb(47, 218, 73);
+  box-shadow: 0 0 10px rgb(0, 127, 127);
+  cursor: pointer;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: 0 0 7px rgb(0, 255, 255);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  min-height: unset;
+}
+.radio{
+    align-items: center;
+}
+.checkbox{
+    align-items: center;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <p>
+        Thank you for taking the time to help us improve the platform
+    </p>
+    <fieldset>
+        <form action="backend.php">
+            <div>
+            Name 
+            <input type="text" placeholder="Enter your name" >
+            </div>
+            <div>
+            Email <input type="email" name="myemail" id="" placeholder="Enter your email">
+            </div>
+            <div>
+                Age(optional) <input type="number" name="age" id="" placeholder="Age" min="13" max="100">
+            </div>
+            <div>
+                Which option best describes your current role?
+                <select name="role" id="">
+                    <option value="1">Select Any One</option> !required
+                    <option value="2">Student</option>
+                    <option value="3">Part Time</option>
+                    <option value="4">Full Time</option>
+                    <option value="5">Prefer not to say</option>
+                    <option value="6">Other</option>
+                </select>
+            </div>
+            Would you recommend us to your friends?
+            <div>
+                <label class="radio">
+                    Definitely <input type="radio" name="recommend">
+                    Maybe <input type="radio" name="recommend" >
+                    Not sure <input type="radio" name="recommend" >
+                </label>
+            </div>
+
+            <div>
+                What is your favorite feature of our platform?
+                <select name="role" id="">
+                    <option value="1">Project</option>
+                    <option value="1">Challenges</option>
+                    <option value="1">Community</option>
+                    <option value="1">Open Source</option>
+                </select>
+            </div>
+            <div>
+                What would you like to see improved? (Check all that apply)
+                <label class="checkbox">
+                    <input type="checkbox" name="" id=""> Front End
+                    <input type="checkbox" name="" id=""> Back End
+                    <input type="checkbox" name="" id=""> Data Visualization
+                    <input type="checkbox" name="" id=""> challenges
+                    <input type="checkbox" name="" id=""> Open Source Community
+                    <input type="checkbox" name="" id=""> Forum
+                </div>
+                </label>
+            <div>
+                Any comments or suggestion?
+                <textarea name="" id="" cols="90" rows="10" placeholder="Enter your comments here...">
+                </textarea>
+            </div>
+            <div>
+            <input type="submit" value="Submit" id="mysubmit">
+
+            </div>
+            </form>
+    </fieldset>
+    
+</body>
+</html>

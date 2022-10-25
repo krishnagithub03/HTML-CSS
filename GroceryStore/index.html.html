@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            /* font-family: tangerine; */
+            font-size: 100%;
+            background-image: url(raul-gonzalez-escobar-ZpIskW1Tuvc-unsplash.jpg);
+
+            
+        }
+        
+        .container{
+            width: 900px;
+            height: 700px;
+            margin: auto;
+            border: 5px solid rgb(206, 126, 126);
+            background-color: burlywood;
+        }
+        .item{
+            border: 3px solid black;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(230, 210, 138);
+
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+            
+        }
+        #computer{
+            float: right;
+            width: 48%;
+            
+        }
+        #stationary{
+            /* float: left;
+             */
+             clear: both;
+            width: 100%;
+
+        }
+        p,h3{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+
+        }
+        h1{
+            margin: auto;
+            width: 306px;
+            padding: 2px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Welcome To My Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nostrum deleniti distinctio quisquam nesciunt dolore, vitae fuga qui voluptate? Mollitia ipsa quam repudiandae, nihil similique, praesentium nobis veniam est quia, harum laboriosam modi minima? Laudantium, quae repellat enim voluptas asperiores iste expedita unde totam, recusandae, sint dolor soluta accusamus!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi tempora architecto rem tenetur sequi libero corrupti quibusdam. Expedita sunt vitae ut quos, dolorum et optio, aliquam veniam quo nostrum illo facilis! Delectus, necessitatibus. consectetur adipisicing elit. Laudantium, quae repellat enim voluptas asperiores iste expedita unde totam, recusandae, Lorem ipsum dolor sit amet fnechuihehoihjeow</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae repellat enim voluptas asperiores iste expedita unde totam, recusandae, sint dolor soluta accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis vel odio aliquid modi quidem consequuntur eaque autem repellendus quo. Aliquam magnam dignissimos veritatis neque? Odit eligendi ducimus atque excepturi quidem quae itaque dolorem.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
